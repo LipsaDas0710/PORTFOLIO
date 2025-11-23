@@ -10,7 +10,7 @@ import Footer from "@/components/ui/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-gradient-to-t from-zinc-600 via-stone-800 to-zinc-900">
+    <main className="bg-gradient-to-t from-slate-950 via-blue-850 to-gray-900">
       <FloatingNav navItems={navItems} />
       <Hero />
       <Grid />
