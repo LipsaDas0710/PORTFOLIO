@@ -76,7 +76,8 @@ export const projects = [
     des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    link: "https://nom-nom-now-fullstackwebsite.vercel.app/",
+    github: "https://github.com/LipsaDas0710/NomNomNow_FULLSTACKWEBSITE",
   },
   {
     id: 2,
@@ -84,7 +85,8 @@ export const projects = [
     des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    link: "https://expense-tracker-5aov.onrender.com/",
+    github: "https://github.com/LipsaDas0710/EXPENSE-TRACKER-FULLSTACKWEBSITE",
   },
   {
     id: 3,
@@ -93,6 +95,7 @@ export const projects = [
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/ui.aiimg.com",
+    github: "https://github.com/LipsaDas0710/NomNomNow_FULLSTACKWEBSITE",
   },
   {
     id: 4,
@@ -101,6 +104,7 @@ export const projects = [
     img: "/p4.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "/ui.apple.com",
+    github: "https://github.com/LipsaDas0710/NomNomNow_FULLSTACKWEBSITE",
   },
 ];
 
