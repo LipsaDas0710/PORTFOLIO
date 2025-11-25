@@ -8,9 +8,9 @@ import { PinContainer } from "./ui/Pin";
 const RecentProjects = () => {
   return (
     <div className="py-20">
-      <h1 className="heading">
+      <h1 className="heading text-white text-center text-4xl font-bold">
         A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+        <span className="text-fuchsia-400">recent projects</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
         {projects.map((item) => (
@@ -33,11 +33,11 @@ const RecentProjects = () => {
                 <img
                   src={item.img}
                   alt="cover"
-                  className="z-10 absolute bottom-0"
+                  className="z-10 absolute bottom-0 lg:rounded-3xl"
                 />
               </div>
 
-              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
+              <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1 text-[#BEC1DD]">
                 {item.title}
               </h1>
 
@@ -50,6 +50,7 @@ const RecentProjects = () => {
               >
                 {item.des}
               </p>
+              </a>
 
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">
@@ -65,20 +66,22 @@ const RecentProjects = () => {
                     </div>
                   ))}
                 </div>
+                
 
                 <div className="flex justify-center items-center">
                    <a
                       href={item.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center lg:text-xl md:text-xs text-sm text-purple">
-                    View Source Code
+                      className="flex items-center lg:text-xl :text-xs text-sm text-[#BEC1DD]">
+                    Source Code
                     <FaLocationArrow className="ms-3" color="#CBACF9" />
                   </a>
                 </div>
               </div>
-              </a>
+              
             </PinContainer>
+            
           </div>
         ))}
       </div>
