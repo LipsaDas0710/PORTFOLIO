@@ -3,22 +3,23 @@ export const navItems = [
   { name: "Projects", link: "#projects" },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
+  {name:"darkmode", link:"#darkmode  "}
 ];
 
 export const gridItems = [
   {
-    id: 1,
-    title: "I prioritize client collaboration ",
+    id: 2,
+    title: "",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh] text-white",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "",
     spareImg: "",
   },
   {
-    id: 2,
-    title: "I'm very flexible with time zone communications",
+    id: 1,
+    title: "I prioritize client collaboration.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2 text-white",
     imgClassName: "",
@@ -59,7 +60,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",

@@ -38,8 +38,8 @@ export const BentoGridItem = ({
   titleClassName,
   spareImg,
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["ReactJS", "NextJS", "NodeJS"];
+  const rightLists = ["AI", "ML", "LLM"];
 
   const [copied, setCopied] = useState(false);
 
@@ -53,7 +53,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "lipsadas1922@gmail.com";
     if (typeof navigator !== "undefined" && navigator.clipboard) {
       navigator.clipboard.writeText(text);
     }
@@ -84,6 +84,7 @@ export const BentoGridItem = ({
               alt={img}
               className={cn(imgClassName, "object-cover object-center ")}
             />
+            
           )}
         </div>
         <div
@@ -112,6 +113,7 @@ export const BentoGridItem = ({
             "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
           )}
         >
+          
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
           <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
             {description}
@@ -119,13 +121,26 @@ export const BentoGridItem = ({
           {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
           {/* remove mb-2 mt-2 */}
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 `}
           >
             {title}
           </div>
 
           {/* for the github 3d globe */}
-          {id === 2 && <GridGlobe />}
+          {id === 2 && (
+            <div>
+              <GridGlobe />
+            
+            <div
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 mb-50`}
+          >
+            {title="I'm very flexible with time zone communications"}
+          </div>
+          </div>
+          )}
+          {id===1 &&(
+            <img src="/confetti.gif" alt="confetti" className="absolute inset-0 z-50 ml-30" />
+          )}
 
           {/* Tech stack list div */}
           {id === 3 && (
@@ -167,8 +182,14 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
+                 {/* <img src="/confetti.gif" alt="confetti" />  */}
                 <Lottie options={defaultOptions} height={200} width={400} />
+                <div
+            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 mb-20`}
+          >
+            {title="An idea brewing?I’m in. "}
+            {/* <div><p>I’m in.</p></div> */}
+          </div>
               </div>
 
               <MagicButton

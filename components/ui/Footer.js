@@ -17,14 +17,12 @@ const Footer = () => {
 
       <div className="flex flex-col items-center text-white text-3xl font-bold">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-fuchsia-500">your</span> digital
-          presence to the next level?
+          Your next <span className="text-fuchsia-500">big </span>project is waiting...
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+        <p className="text-white-200 md:mt-5 text-center md:mb-4">
+          and so is my inbox
         </p>
-        <a href="mailto:contact@jsmastery.pro">
+        <a href="#lipsa">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -32,11 +30,17 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+       <div className="w-full left-0 mt-2 min-h-96">
+        <img
+          src="/footer-grid.svg"
+          alt="grid"
+          className="m-55 w-full h-full opacity-50 "
+        />
+        {/* kldwl */}
+        <div className="flex  md:flex-row flex-col justify-between items-center text-white ">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2025 Lipsa Das
         </p>
-
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
             <div
@@ -51,6 +55,8 @@ const Footer = () => {
           ))}
         </div>
       </div>
+      </div>
+      
     </footer>
   );
 };
